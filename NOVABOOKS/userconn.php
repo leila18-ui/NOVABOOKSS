@@ -3,26 +3,28 @@ session_start();
 require 'config.php';
 
 if(isset($_POST['connecter'])){ 
- 
+
 //Verifier que des champs ne sont pas vides
 if(!empty($_POST['email'])AND !empty($_POST['password'])){
    $email = htmlspecialchars($_POST['email']);
    $password = $_POST['password'];
-   $req = $pdo->prepare("SELECT id FROM user WHERE email=? " );
-   $req-> execute(array ($email, $password));
-   $cpt = $req->rowCount();
 
-   if($cpt == 0) {
-    $password_crypte = password_hash( $password , PASSWORD_DEFAULT );
-    $req = $pdo -> prepare ("INSERT INTO user (email, mdp) VALUES (?, ?)");
-    $message = "Votre compte à bien été trouvé ";
+   $marequete = $pdo->prepare("SELECT id, mdp FROM user WHERE email=? " );
+   $marequete-> execute ([$email]);
+   $user = $marequete -> fetch(PDO::FETCH_ASSOC);
+   
+   if($user && password_verify($password, $user['mdp'] )  ) {
+   $_SESSION['user_id'] = $user['id'];
+   header('Location: index.php');
+   exit;
+   
    }else{
-    $messag = "Désolé nous ne troiuvons pas ce compte ";
+   $message = "Email ou mot de passe incorrect. ";
    }
 
+
    }else{
-  $message = 'Veuillez entrer un message';
+   $message = 'Veuillez remplir tous les champs';
+}
 
-  }
-
- } 
+} 

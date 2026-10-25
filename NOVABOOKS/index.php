@@ -47,44 +47,44 @@ $page_active = "index" ;
 
         <div class="livre">
             <img src="image/Home - Ali Hazelwood.jpeg" alt="Leonid Petrov — Nanou AD">
-            <p><strong>The loove hypothesis</strong><br> Ali Hazelwood</p>
+            <p><strong>The love hypothesis</strong><br> Ali Hazelwood</p>
             <span>13 500 FCFA</span>
-            <h3><a href="product.php#leonid" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#love" class="plus">Voir plus</a></h3>
         </div>
 
         <div class="livre">
             <img src="image/Uncovering Rose_ Special Edition Cover - A Curvy Girl Mafia Second Chance Romance (The Sinful Secrets Series).jpeg" alt="Uncovering Rose — Sinful Secrets">
             <p><strong>Uncovering Rose</strong><br>Annie charm</p>
             <span>12 000 FCFA</span>
-            <h3><a href="product.php#uncovering" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#UNCOVE" class="plus">Voir plus</a></h3>
         </div>
 
         <div class="livre">
             <img src="image/birth.jpeg" alt="Birthday Girl — Penelope Douglas">
             <p><strong>Birthday Girl</strong><br>de Penelope Douglas</p>
             <span>13 500 FCFA</span>
-            <h3><a href="product.php#birthday" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#birth" class="plus">Voir plus</a></h3>
         </div>
 
         <div class="livre">
             <img src="image/Mad Majesty.jpeg" alt="Mad Majesty — Sarah Rivens">
             <p><strong>Mad Majesty</strong><br>Delinda  Dane</p>
             <span>13 500 FCFA</span>
-            <h3><a href="product.php#madmajesty" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#mad" class="plus">Voir plus</a></h3>
         </div>
 
         <div class="livre">
             <img src="image/Wild Love NA.jpeg" alt="Wild Love — Elsie Silver">
             <p><strong>Wild Love</strong><br>d'Elsie Silver</p>
             <span>13 500 FCFA</span>
-            <h3><a href="product.php#wildlove" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#wild" class="plus">Voir plus</a></h3>
         </div>
 
         <div class="livre">
             <img src="image/The Wrong Bride _ Maura, Catharina, Jaubert, Agnès_ Amazon_fr_ Livres.jpeg" alt="The Wrong Bride — Catharina Maura">
             <p><strong>The Wrong Bride</strong><br>de Catharina Maura</p>
             <span>13 500 FCFA</span>
-            <h3><a href="product.php#wrongbride" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#wrong" class="plus">Voir plus</a></h3>
         </div>
 
         <div class="livre">
@@ -98,7 +98,7 @@ $page_active = "index" ;
             <img src="image/FANTA2.jpeg" alt="Hexed — Emily McIntire">
             <p><strong>Hexed</strong><br>d'Emily McIntire</p>
             <span>13 500 FCFA</span>
-            <h3><a href="product.php#hexed" class="plus">Voir plus</a></h3>
+            <h3><a href="product.php#fan7" class="plus">Voir plus</a></h3>
         </div>
 
     </section>

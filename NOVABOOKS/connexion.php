@@ -1,3 +1,8 @@
+<?php if (!empty($message)): ?>
+    <div style="color: red; margin-bottom: 15px; font-weight: bold;">
+        <?php echo $message; ?>
+    </div>
+<?php endif; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

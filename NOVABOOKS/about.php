@@ -13,22 +13,21 @@ $page_active = "about";
 </head>
 <body>
 
-      <?php require 'part/header.php';?>
+    <?php require 'part/header.php';?>
 
     <main>
 
-        <!-- HEADER -->
+        
         <section class="about-header">
             <h1>À propos de NovaBooks</h1>
             <p>Votre destination pour les histoires qui bouleversent</p>
         </section>
 
-        <!-- QUI SOMMES-NOUS -->
         <section class="presentation">
             <div class="presentation-image">
                 <img src="image/Charleston Bookstore (King Street).jpeg" alt="Librairie NovaBooks">
             </div>
-    
+
             <div class="presentation-texte">
                 <h2>Qui sommes-nous ?</h2>
                 <p>NovaBooks est une librairie en ligne née de la passion pour les histoires intenses et captivantes. Nous croyons que chaque livre est une porte vers un nouvel univers, une aventure qui change celui qui la vit.</p>
@@ -40,7 +39,7 @@ $page_active = "about";
         <!-- NOTRE MISSION -->
         <section class="mission">
             <div class="mission-texte">
-                <h2>🎯 Notre Mission</h2>
+                <h2> Notre Mission</h2>
                 <p>Rendre les histoires intenses et captivantes accessibles à tous les lecteurs passionnés de Côte d'Ivoire.</p>
                 <p>Nous nous engageons à :</p>
                 <ul class="mission-list">
@@ -62,19 +61,19 @@ $page_active = "about";
             <h2>Nos Valeurs</h2>
             <div class="valeurs-container">
                 <div class="valeur-card">
-                    <div class="valeur-icon">📚</div>
+                    <div class="valeur-icon"></div>
                     <h3>Passion</h3>
                     <p>Nous aimons les livres et la lecture. C'est notre passion qui vous guide vers les meilleures histoires.</p>
                 </div>
 
                 <div class="valeur-card">
-                    <div class="valeur-icon">⭐</div>
+                    <div class="valeur-icon"></div>
                     <h3>Qualité</h3>
                     <p>Chaque livre est sélectionné avec soin pour garantir une expérience de lecture exceptionnelle.</p>
                 </div>
 
                 <div class="valeur-card">
-                    <div class="valeur-icon">🤝</div>
+                    <div class="valeur-icon"></div>
                     <h3>Confiance</h3>
                     <p>Vos données sont protégées et votre satisfaction est notre priorité absolue.</p>
                 </div>
@@ -85,27 +84,27 @@ $page_active = "about";
             <h2>Pourquoi choisir NovaBooks ?</h2>
             <div class="pourquoi-container">
                 <div class="pourquoi-item">
-                    <h3>📦 Livraison Rapide</h3>
+                    <h3> Livraison Rapide</h3>
                     <p>Livraison en 24-48h partout en Côte d'Ivoire. Vos livres vous attendent !</p>
                 </div>
 
                 <div class="pourquoi-item">
-                    <h3>💳 Paiement Sécurisé</h3>
+                    <h3> Paiement Sécurisé</h3>
                     <p>Vos transactions sont protégées par les meilleures normes de sécurité.</p>
                 </div>
 
                 <div class="pourquoi-item">
-                    <h3>💬 Support Client</h3>
+                    <h3> Support Client</h3>
                     <p>Une équipe à votre écoute pour répondre à toutes vos questions.</p>
                 </div>
 
                 <div class="pourquoi-item">
-                    <h3>🎁 Emballage Soigné</h3>
+                    <h3>Emballage Soigné</h3>
                     <p>Vos livres arrivent en parfait état, idéal pour un cadeau.</p>
                 </div>
 
                 <div class="pourquoi-item">
-                    <h3>📖 Sélection Curatée</h3>
+                    <h3>Sélection Curatée</h3>
                     <p>Nos experts sélectionnent les meilleurs titres pour vous.</p>
                 </div>
 
@@ -135,7 +134,7 @@ $page_active = "about";
             </div>
 
             <div class="stat-card">
-                <h3>⭐ 4.9/5</h3>
+                <h3> 4.9/5</h3>
                 <p>Note moyenne clients</p>
             </div>
         </section>

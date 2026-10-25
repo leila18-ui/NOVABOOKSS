@@ -57,13 +57,13 @@ function allerAuCheckout() {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
     if (!currentUser) {
-        localStorage.setItem('redirectAfterLogin', 'checkout.html');
+        localStorage.setItem('redirectAfterLogin', 'checkout.php');
         alert('⚠️ Connectez-vous pour passer commande');
-        window.location.href = 'contact.html';
+        window.location.href = 'contact.php';
         return;
     }
 
-    window.location.href = 'checkout.html';
+    window.location.href = 'checkout.php';
 }
 </script>
 
