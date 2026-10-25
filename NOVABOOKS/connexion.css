@@ -1,0 +1,263 @@
+/* ===== GOOGLE FONTS (TOUJOURS EN HAUT) ===== */
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overscroll-behavior: none;
+}
+
+/* BODY */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f394bf;
+    min-height: 100vh;
+    line-height: 1.6;
+    /* ✅ PAS de display:flex → header et form s'empilent */
+}
+
+
+.login-form {
+    width: 100%;
+    max-width: 420px;
+    margin: 60px auto;             /*  centré horizontalement */
+    background-color: #ffffff;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.login-title {
+    font-size: 24px;
+    color: #1a1a2e;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgb(220, 152, 163);
+    background-color: #f9f9f9;
+
+}
+
+.souvenir {
+    margin-bottom: 20px;
+}
+
+.souvenir label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.souvenir input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.connexion button {
+    width: 100%;
+    padding: 13px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.connexion button:hover {
+    background-color: rgb(159, 138, 138);
+    transform: translateY(-1px);
+}
+
+.liens {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.liens a {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.liens a:hover {
+    text-decoration: underline;
+}
+
+.mdp {
+    color: rgb(220, 152, 163);
+}
+
+.comp {
+    color: #333;
+    font-weight: 700;
+}
+
+/*RESPONSIVE */
+
+/* ===== TABLETTE (< 768px) ===== */
+@media (max-width: 768px) {
+    .partie1 {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .brand {
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .brand h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .login-form {
+        margin: 40px auto;
+        padding: 30px 22px;
+        max-width: 380px;
+    }
+}
+
+/*  MOBILE (< 480px)*/
+@media (max-width: 480px) {
+    .partie1 {
+        padding: 12px 15px;
+    }
+
+    .brand h2 {
+        font-size: 20px;
+    }
+
+    .brand h5 {
+        font-size: 9px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #icon-panier {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+        top: -6px;
+        right: -10px;
+    }
+
+    .login-form {
+        margin: 25px auto;
+        padding: 25px 18px;
+        border-radius: 12px;
+        max-width: 100%;
+    }
+
+    .login-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Anti-zoom iOS : inputs à 16px minimum */
+    .form-group input {
+        font-size: 16px;
+        padding: 11px 12px;
+    }
+
+    .connexion button {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .liens a {
+        font-size: 13px;
+    }
+}
+
+/* ===== TRÈS PETIT (< 360px) ===== */
+@media (max-width: 360px) {
+    .brand h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .login-form {
+        padding: 20px 14px;
+    }
+
+    .login-title {
+        font-size: 18px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .connexion button {
+        font-size: 14px;
+    }
+}

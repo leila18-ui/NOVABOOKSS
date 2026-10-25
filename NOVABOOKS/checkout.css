@@ -1,0 +1,233 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rose: #ff6b9d;
+    --rose-fonce: #d86d91;
+    --rose-hover: #c15a7d;
+    --fond-rose: #fff5f8;
+    --noir: #000;
+    --gris: #ddd;
+    --texte: #1a1a2e;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #fafafa;
+    color: var(--texte);
+    min-height: 100vh;
+}
+
+
+
+
+/* ===== BADGE PANIER ===== */
+.panier {
+    position: relative;
+}
+
+#icon-panier {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: pink;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+/* ===== ZONE FORMULAIRE (aérée) ===== */
+.form {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 80px);
+}
+
+/* ===== FORMULAIRE ===== */
+#checkout-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* ===== BLOCS INFO + LIVRAISON ===== */
+.info,
+.livraison {
+    flex: 1 1 350px;
+    max-width: 450px;
+    padding: 35px 40px;
+    background-color: var(--fond-rose);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(216, 109, 145, 0.08);
+}
+
+.info legend,
+.livraison legend {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--rose-fonce);
+    padding: 0 10px;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+/* ===== LABELS ===== */
+.info label,
+.livraison label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+/* ===== INPUTS ===== */
+.info input,
+.livraison input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info input:focus,
+.livraison input:focus {
+    outline: none;
+    border-color: var(--rose);
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.15);
+}
+
+/* ===== BOUTON VALIDER ===== */
+.btn-valider {
+    flex-basis: 100%;
+    max-width: 450px;
+    margin: 20px auto 0;
+    padding: 16px 30px;
+    background-color: var(--rose-fonce);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+}
+
+.btn-valider:hover {
+    background-color: var(--rose-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(216, 109, 145, 0.35);
+}
+
+.btn-valider:active {
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .partie1 {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 25px;
+        text-align: center;
+    }
+
+    .partie1 h2 {
+        margin-right: 0;
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form {
+        padding: 50px 20px;
+        min-height: auto;
+    }
+
+    #checkout-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info,
+    .livraison,
+    .btn-valider {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .partie1 {
+        padding: 15px 15px;
+    }
+
+    .partie1 h2 {
+        font-size: 22px;
+    }
+
+    .partie1 h5 {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .form {
+        padding: 40px 15px;
+    }
+
+    .info,
+    .livraison {
+        padding: 25px 20px;
+    }
+
+    .info legend,
+    .livraison legend {
+        font-size: 17px;
+    }
+
+    .info input,
+    .livraison input {
+        font-size: 16px;   /* anti-zoom iOS */
+        padding: 10px 12px;
+    }
+
+    .btn-valider {
+        font-size: 15px;
+        padding: 14px 20px;
+    }
+}
